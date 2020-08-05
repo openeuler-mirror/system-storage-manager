@@ -2,7 +2,7 @@
 
 Name:           system-storage-manager
 Version:        1.3
-Release:        2
+Release:        3
 Summary:        A single tool to manage your storage
 License:        GPLv2+
 URL:            https://system-storage-manager.github.io/
@@ -47,5 +47,8 @@ fi
 %{python3_sitelib}/*
 
 %changelog
+* Wed Aug 05 2020 Zhiqiang Liu <liuzhiqiang26@huawei.com> - 1.3-3
+- remove useless README files.
+
 * Fri Jul 03 2020  yaokai <yaokai13@huawei.com> - 1.3-2
 - Package init
