@@ -1,8 +1,8 @@
 %{!?_pkgdocdir: %global _pkgdocdir %{_docdir}/system-storage-manager-%{version}}
 
 Name:           system-storage-manager
-Version:        1.3
-Release:        3
+Version:        1.4
+Release:        1
 Summary:        A single tool to manage your storage
 License:        GPLv2+
 URL:            https://system-storage-manager.github.io/
@@ -47,6 +47,9 @@ fi
 %{python3_sitelib}/*
 
 %changelog
+* Sun Jan 29 2023 lihaoxiang <lihaoxiang9@huawei.com> - 1.4-1
+- Upgrade to version 1.4.
+
 * Wed Aug 05 2020 Zhiqiang Liu <liuzhiqiang26@huawei.com> - 1.3-3
 - remove useless README files.
 
