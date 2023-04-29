@@ -1,0 +1,12 @@
+diff -u -r ssm-system-storage-manager-1.4/ssmlib/backends/crypt.py ssm-system-storage-manager-1.4/ssmlib/backends/crypt.py
+--- ssm-system-storage-manager-1.4/ssmlib/backends/crypt.py	2019-04-24 21:31:59.000000000 +0800
++++ ssm-system-storage-manager-1.4/ssmlib/backends/crypt.py	2023-04-29 18:25:28.000000000 +0800
+@@ -52,7 +52,7 @@
+ def get_cryptsetup_version():
+     try:
+         output = misc.run(['cryptsetup', '--version'], can_fail=True)[1]
+-        version = list(map(int, output.strip().split()[-1].split('.', 3)))
++        version = list(map(int, output.strip().split()[1].split('.', 3)))
+     except (OSError, AttributeError):
+         version = [0, 0, 0]
+     return version

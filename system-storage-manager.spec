@@ -2,12 +2,13 @@
 
 Name:           system-storage-manager
 Version:        1.4
-Release:        1
+Release:        2
 Summary:        A single tool to manage your storage
 License:        GPLv2+
 URL:            https://system-storage-manager.github.io/
 Source0:        https://github.com/system-storage-manager/ssm/archive/system-storage-manager-%{version}.tar.gz
 Patch0000:      python3-sphinx.patch
+Patch0001:      fix-version-value-exception.patch
 BuildArch:      noarch
 Requires:       util-linux which xfsprogs e2fsprogs python3-pwquality
 BuildRequires:  python3-devel python3-sphinx python3-pwquality
@@ -47,6 +48,9 @@ fi
 %{python3_sitelib}/*
 
 %changelog
+* Sat Apr 29 2023 yoo <sunyuechi@iscas.ac.cn> - 1.4-2
+- fix version ValueError
+
 * Sun Jan 29 2023 lihaoxiang <lihaoxiang9@huawei.com> - 1.4-1
 - Upgrade to version 1.4.
 
